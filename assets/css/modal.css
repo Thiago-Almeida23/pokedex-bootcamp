@@ -1,0 +1,134 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima do modal */
+  padding: 20px;
+  border: #000000 solid;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #000000;
+  padding: 20px;
+  border: #000000 solid;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.modal img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-right: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+  font-size: 24px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.modal.normal {
+  background-color: #a6a877;
+}
+.modal.grass {
+  background-color: #77c850;
+}
+.modal.fire {
+  background-color: #ee7f30;
+}
+.modal.water {
+  background-color: #678fee;
+}
+.modal.electric {
+  background-color: #f7cf2e;
+}
+.modal.ice {
+  background-color: #98d5d7;
+}
+.modal.ground {
+  background-color: #dfbf69;
+}
+.modal.flying {
+  background-color: #a98ff0;
+}
+.modal.poison {
+  background-color: #a040a0;
+}
+.modal.fighting {
+  background-color: #bf3029;
+}
+.modal.psychic {
+  background-color: #f65687;
+}
+.modal.dark {
+  background-color: #725847;
+}
+.modal.rock {
+  background-color: #b8a137;
+}
+.modal.bug {
+  background-color: #a8b720;
+}
+.modal.ghost {
+  background-color: #6e5896;
+}
+.modal.steel {
+  background-color: #b9b7cf;
+}
+.modal.dragon {
+  background-color: #6f38f6;
+}
+.modal.fairy {
+  background-color: #f9aec7;
+}
+
+/* Estilos para alinhar o conteúdo à esquerda e à direita no modal */
+.modal-content {
+  display: flex;
+  align-items: center;
+}
+
+.modal-left {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.modal-right {
+  flex: 1;
+  text-align: right;
+  padding: 0 10px;
+}
